@@ -1,6 +1,8 @@
 ## Intro
 This project is a Python-based serial port terminal designed with a simple and user-friendly interface. It's easy to use for various DIY projects, such as communicating with an Arduino or other microcontroller via the serial port.
 
+![](doc/screenshots/pyterm-arduino.png)
+
 ## CI Status
 [![CI](https://github.com/nkh-lab/pyterm/actions/workflows/ci.yml/badge.svg)](https://github.com/nkh-lab/pyterm/actions/workflows/ci.yml)
 

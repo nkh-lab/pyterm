@@ -35,10 +35,11 @@ def read_from_port(serial_port, stop_event, hex_mode):
                 if hex_mode:
                     # Decode data from bytes to hex string
                     text = data.hex()
+                    print(text, end="\n", flush=True)
                 else:
                     # Decode data from bytes to text
                     text = data.decode("utf-8")
-                print(text, end="\n", flush=True)
+                    print(text, end="", flush=True)
             else:
                 # Sleep for a short time to reduce CPU usage
                 time.sleep(0.1)
@@ -88,7 +89,7 @@ def main():
                 stop_event.set()
                 read_thread.join()
 
-                # Read user input from the console
+                # Read user input from the console, '\n' - stripped
                 user_input = input()
                 if user_input:
                     if hex_mode:
@@ -100,7 +101,7 @@ def main():
                             print(f"Invalid hex input: {e}")
                     else:
                         # Text mode
-                        bytes_to_send = user_input.encode("utf-8")
+                        bytes_to_send = (user_input + "\n").encode("utf-8")
 
                     # Send the user input to the serial port
                     serial_port.write(bytes_to_send)
