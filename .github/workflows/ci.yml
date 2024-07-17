@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          sudo apt install python3-serial python3-pexpect
+          sudo apt install python3-pytest python3-serial python3-pexpect
 
       - name: Run tests
         run: |
