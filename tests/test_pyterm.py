@@ -15,7 +15,7 @@ import time
 import os
 import signal
 
-PYTERM = "./../src/pyterm.py"
+PYTERM = "./src/pyterm.py"
 
 
 @pytest.fixture(scope="module")
