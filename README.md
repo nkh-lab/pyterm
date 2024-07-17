@@ -1,6 +1,9 @@
 ## Intro
 This project is a Python-based serial port terminal designed with a simple and user-friendly interface. It's easy to use for various DIY projects, such as communicating with an Arduino or other microcontroller via the serial port.
 
+## CI Status
+[![CI](https://github.com/nkh-lab/pyterm/actions/workflows/ci.yml/badge.svg)](https://github.com/nkh-lab/pyterm/actions/workflows/ci.yml)
+
 ## How It Works
 After running the terminal, it starts listening to the specified serial port for incoming data. When the user begins typing, the terminal temporarily pauses listening. Upon pressing Enter, the typed data is sent to the connected device, and the terminal resumes listening to the port for any new messages. This allows for seamless communication between the terminal and the connected device.
 
