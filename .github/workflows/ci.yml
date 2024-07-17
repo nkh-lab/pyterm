@@ -12,15 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.10
-
       - name: Install System dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install socat
+          sudo apt-get install python3 socat
 
       - name: Install Python dependencies
         run: |
