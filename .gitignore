@@ -1,0 +1,16 @@
+# Python #
+
+# Folders
+__pycache__/
+
+# VisualStudioCode #
+
+# Files
+.project
+
+# Folders
+.settings/
+.vscode/*
+
+# Exclude
+!.vscode/launch.json
