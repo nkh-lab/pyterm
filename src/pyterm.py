@@ -65,7 +65,7 @@ def main():
         serial_port = serial.Serial(
             port, baudrate, timeout=DEFAULT_READ_TIMEOUT)
         print(
-            f"Connected to {port} at {baudrate} baudrate with a read timeout of {DEFAULT_READ_TIMEOUT} seconds. Use Ctrl+C to exit.")
+            f"Connected to {port} at {baudrate} baudrate. Use Ctrl+C to exit.")
     except Exception as e:
         # Handle exceptions related to opening the serial port
         print(f"Failed to connect to {port}: {e}")

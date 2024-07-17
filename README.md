@@ -25,14 +25,14 @@ Passing the -h flag enables hexadecimal mode, which means you can send raw bytes
 Text mode:
 ```
 ./pyterm.py /dev/pts/13 9600
-Connected to /dev/pts/13 at 9600 baudrate with a read timeout of 0.5 seconds. Use Ctrl+C to exit.
+Connected to /dev/pts/13 at 9600 baudrate. Use Ctrl+C to exit.
 Hello World from pyterm!
 ```
 
 Hex mode:
 ```
 ./pyterm.py /dev/pts/13 9600 -h
-Connected to /dev/pts/13 at 9600 baudrate with a read timeout of 0.5 seconds. Use Ctrl+C to exit.
+Connected to /dev/pts/13 at 9600 baudrate. Use Ctrl+C to exit.
 0102030405060708090a0b0c0d0e0f
 ```
 

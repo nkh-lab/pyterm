@@ -15,7 +15,7 @@ socat -d -d pty,raw,echo=0 pty,raw,echo=0
 Termial#1:
 ```
 ./pyterm.py /dev/pts/13 9600
-Connected to /dev/pts/13 at 9600 baudrate with a read timeout of 0.5 seconds. Use Ctrl+C to exit.
+Connected to /dev/pts/13 at 9600 baudrate. Use Ctrl+C to exit.
 Hello from Terminal#1
 Hello from Terminal#2
 ^C
@@ -26,7 +26,7 @@ Serial port closed.
 Termial#2:
 ```
 ./pyterm.py /dev/pts/13 9600
-Connected to /dev/pts/13 at 9600 baudrate with a read timeout of 0.5 seconds. Use Ctrl+C to exit.
+Connected to /dev/pts/13 at 9600 baudrate. Use Ctrl+C to exit.
 Hello from Terminal#1
 Hello from Terminal#2
 ^C
